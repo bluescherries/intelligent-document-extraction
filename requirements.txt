@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+pydantic
+pydantic-settings
+sqlalchemy
+PyMuPDF
+Pillow
+pydantic
+pytesseract
+python-dotenv
+python-multipart
+opencv-python
+openai
+jinja2
+pytest
+httpx

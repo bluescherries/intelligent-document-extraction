@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Intelligent Document Extraction
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- Header -->
+
+    <header class="header">
+
+        <div class="header-content">
+
+            <h1>
+                Intelligent Document Extraction
+            </h1>
+
+            <p>
+                AI-powered financial document extraction
+                and validation platform
+            </p>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- Main content -->
+
+    <main class="container">
+
+
+        <!-- Upload section -->
+
+        <section class="upload-card">
+
+            <h2>
+                Upload Financial Document
+            </h2>
+
+
+            <!-- IMPORTANT:
+                 We now have an actual FORM element.
+            -->
+
+            <form id="documentForm">
+
+
+                <!-- Document type -->
+
+                <div class="form-group">
+
+                    <label for="documentType">
+                        Document Type
+                    </label>
+
+
+                    <select
+                        id="documentType"
+                        name="document_type"
+                        required
+                    >
+
+                        <option value="INVOICE">
+                            Invoice
+                        </option>
+
+                        <option value="BALANCE_SHEET">
+                            Balance Sheet
+                        </option>
+
+                        <option value="PROFIT_LOSS">
+                            Profit & Loss
+                        </option>
+
+                        <option value="CASH_FLOW_STATEMENT">
+                            Cash Flow Statement
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- File -->
+
+                <div class="form-group">
+
+                    <label for="documentFile">
+                        Select Document
+                    </label>
+
+
+                    <input
+                        type="file"
+                        id="documentFile"
+                        name="file"
+                        accept=".pdf,.jpg,.jpeg,.png"
+                        required
+                    >
+
+
+                    <small>
+                        Supported formats: PDF, JPG, PNG
+                    </small>
+
+                </div>
+
+
+
+                <!-- Process button -->
+
+                <button
+                    type="submit"
+                    id="processButton"
+                    class="primary-button"
+                >
+                    Process Document
+                </button>
+
+
+            </form>
+
+        </section>
+
+
+
+        <!-- Results will appear here -->
+
+        <section
+            id="resultContainer"
+            class="result-container"
+        >
+        </section>
+
+
+    </main>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>ss
